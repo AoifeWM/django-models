@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aoife's Snacks 2</title>
+</head>
+<header>
+    <nav>
+        <a href = "{% url 'snack_list' %}">Snack List</a>
+    </nav>
+    {% block head %}
+        <h1>Aoife's Snacks</h1>
+    {% endblock head %}
+
+</header>
+
+<body>
+    {% block body %}
+        <p>This is the default template body. Something went wrong if this showed up!</p>
+    {% endblock body %}
+</body>
+
+<footer>
+    <p>Created with Django by <a href = "https://github.com/AoifeWM">Aoife W Mulligan</a>, august 2022</p>
+</footer>
