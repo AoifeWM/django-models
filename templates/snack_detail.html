@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block head %}
-    <h1>Snacks Detailed View</h1>
+    <h1>{{ snack.name }}</h1>
 {% endblock head %}
 
 {% block body %}
-    <p>detail view filler content</p>
+    <h2>{{ snack.name }}</h2>
+    <p>{{ snack.description }}</p>
+    <p>Submitted by {{ snack.purchaser }}</p>
 {% endblock body %}
+
